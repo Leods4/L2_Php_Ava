@@ -1,0 +1,11 @@
+CREATE DATABASE locacao_veiculos;
+
+USE locacao_veiculos;
+
+CREATE TABLE locacoes (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Cliente VARCHAR(50) NOT NULL,
+    Veiculo VARCHAR(50) NOT NULL,
+    Valor_da_Locacao DECIMAL(10, 2) NOT NULL,
+    Periodo_de_Locacao INT NOT NULL
+);
